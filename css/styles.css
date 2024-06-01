@@ -613,6 +613,15 @@ img {
     fill: #000;
 }
 
+.form-comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 16px;
+}
+
 .form-element__textarea {
     width: 100%;
     height: 120px;
@@ -632,6 +641,10 @@ img {
 
 .form-element__textarea:focus {
     border-color: #4D5AE5;
+}
+
+.form-checkbox {
+    margin-bottom: 24px;
 }
 
 .form-checkbox__label {
