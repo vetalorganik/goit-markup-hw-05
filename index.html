@@ -455,16 +455,17 @@
                     <textarea class="form-element__textarea" name="user-comment" id="user-comment"
                         placeholder="Text input" value=""></textarea>
                 </div>
-                <div class="form-element">
-                    <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
-                    <label class="form-element__label" for="user-privacy">
-                        <span class="test">
-                            <svg class="form-element__icon" width="10" height="8">
+                <div class="form-checkbox">
+                    <input class="form-checkbox__real visually-hidden" type="checkbox" id="user-privacy"
+                        name="user-privacy" value="true">
+                    <label class="form-checkbox__label" for="user-privacy">
+                        <span class="form-checkbox__fake">
+                            <svg class="form-checkbox__icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-checked"></use>
                             </svg>
                         </span>
                         I accept the terms and conditions of the
-                        <a class="form-element__link" href="#">Privacy Policy</a>
+                        <a class="form-checkbox__link" href="#">Privacy Policy</a>
                     </label>
                 </div>
                 <button class="form-button">Send</button>
