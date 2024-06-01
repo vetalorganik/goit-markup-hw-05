@@ -359,20 +359,6 @@
         </section>
     </main>
 
-    <div class="modal-overlay is-open">
-        <div class="modal">
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id
-                pariatur voluptate eligendi voluptatem cumque vel odit velit, aperiam
-                vero aliquam assumenda dolorem molestiae illo vitae officia quibusdam
-                esse rerum maiores tempore mollitia repellendus! Repellendus nulla rem
-                dolorem numquam, porro expedita vero nam non ab quod enim hic
-                repudiandae, dolore optio a quo. Vitae esse quia, libero pariatur
-                adipisci error debitis sed tenetur!
-            </p>
-        </div>
-    </div>
-
     <footer class="footer">
         <div class="container flex ai-b">
             <div class="footer__column">
@@ -417,6 +403,74 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-overlay is-open">
+        <div class="modal">
+            <button type="button" class="modal__close-button">
+                <svg class="modal__close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal__text">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="modal__form" action="">
+                <div class="form-element">
+                    <label class="form-element__label" for="user-name">
+                        Name
+                    </label>
+                    <div class="form-element__field">
+                        <input class="form-element__input" type="text" id="user-name" name="user-name">
+                        <svg class="form-element__icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label class="form-element__label" for="user-phone">
+                        Phone
+                    </label>
+                    <div class="form-element__field">
+                        <input class="form-element__input" type="text" id="user-phone" name="user-phone">
+                        <svg class="form-element__icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label class="form-element__label" for="user-email">
+                        Email
+                    </label>
+                    <div class="form-element__field">
+                        <input class="form-element__input" type="text" id="user-email" name="user-email">
+                        <svg class="form-element__icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-element">
+                    <label class="form-element__label" for="user-comment">
+                        Comment
+                    </label>
+                    <textarea class="form-element__textarea" name="user-comment" id="user-comment"
+                        placeholder="Text input" value=""></textarea>
+                </div>
+                <div class="form-element">
+                    <input class="visually-hidden" type="checkbox" id="user-privacy" name="user-privacy" value="true">
+                    <label class="form-element__label" for="user-privacy">
+                        <span class="test">
+                            <svg class="form-element__icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checked"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="form-element__link" href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="form-button">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
